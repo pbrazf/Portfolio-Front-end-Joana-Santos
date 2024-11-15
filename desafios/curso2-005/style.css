@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center; 
+    flex-direction: row; /* Direção que as box vão se alinhas (padrão) */
+    flex-wrap: wrap; /* Faz com que as box quebrem para baixo tornando responsivo o site*/
+}
+
+img {
+    max-width: 100%; /* Limita a imagem para não exceder a largura do contêiner */
+    height: auto;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Modelo de reset.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh; /* Faz ocupar 100% do viewport (tela) */
+    box-sizing: border-box; /* Ajuda a manter elementos no layout sem que "extrapolem" suas dimensões */
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.titulo-destaque{
+    color: #22D4FD
+}
+
+.apresentacao {
+    margin: 10% 15%;
+    display: flex; /* Formato que distribui os elementos em fila */
+    align-items: center; /* Alinha no centro cada elemento */
+    justify-content: space-between; /* Propriedade que dá espaço entre os blocos*/
+}
+
+.apresentacao__conteudo {
+    display: flex;
+    flex-direction: column; /* Divide os elementos em coluna */
+    gap: 40px; /* Distância entre os elementos da flexbox */
+    width: 615px; /* Tamanho do bloco de conteúdo */
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px; /* Tamanho da fonte do texto */
+    font-family: "Krona One", sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px; /* Tamanho da fonte do parágrafo */
+    font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__links { /* Classe para uma div -> DIVs servem somente para agrupar conteúdos, não possuem um valor semântico como <section>, por exemplo. */
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link { /* Classe para os botões */
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px; /* Atributo que arredonda as bordas do btn*/
+    font-size: 24px;
+    padding: 21.5px 0; /* Primeiro valor para o espaçamento vertical e segundo valor para o espaçamento horizontal */
+    text-decoration: none; /* Tira as decorações padrão em links */
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
